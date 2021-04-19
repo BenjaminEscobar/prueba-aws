@@ -24,7 +24,7 @@ public class PruebaController {
 	private PruebaService pruebaService;
 	
 	
-	@GetMapping("/obtieneinfopoliza/{solicitud}/{contacto}")
+	@GetMapping("/info")
 	public ResponseEntity<List<Pais>> listadoPais() {
 
 		List<Pais> list = pruebaService.listadoPais();
