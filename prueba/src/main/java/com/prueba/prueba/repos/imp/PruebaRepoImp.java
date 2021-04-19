@@ -17,7 +17,7 @@ public class PruebaRepoImp implements PruebaRepo {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 	
-	private static final String CONSULTA_PAIS = "select country_id idPais, country_name nombrePais, region_id idRegion from countries";
+	private static final String CONSULTA_PAIS = "select  country_name nombrePais, region_id idRegion from countries";
 
 	@Override
 	public List<Pais> listadoPais() {
